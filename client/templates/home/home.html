@@ -1,0 +1,46 @@
+<template name="home">
+    <div class="container">
+
+    <h1>EventNow</h1>
+    {{#if currentUser}}
+        <div class="row">
+            <div class="col s6">
+            </div>
+            <div class="col s6">
+                    <div id="viewport">
+                        <ul class="stack">
+                            {{#each getEvents}}
+                                <li rel="{{_id}}">
+                                    <div class="row">
+
+                                        <div class="col s3">
+                                            <p class="title"><img class="" width="180" src='{{getPicture picture}}'/></p>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+
+                                        <div class="col s3">
+
+
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                </li>
+                            {{/each}}
+                        </ul>
+                    </div>
+
+            </div>
+        </div>
+        {{else}}
+           <h2 class="red-text accent-2">please log in </h2>
+
+       {{/if}}
+    </div>
+</template>

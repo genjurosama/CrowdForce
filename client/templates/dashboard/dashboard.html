@@ -1,0 +1,21 @@
+<template name="dashboard">
+  <div class="template-dashboard">
+    <a class="btn-floating btn-large waves-effect waves-light red lighten-2 right" href="{{pathFor 'items.new'}}"><i class="mdi-content-add"></i></a>
+
+    <h1 class="red-text text-lighten-1">Dashboard</h1>
+      <h6 class="#4db6ac teal-text text-lighten-2">Your favorite events</h6>
+    <ul class="collection">
+      {{#each getEvents}}
+        <li class="collection-item avatar">
+          <i class="mdi-action-loyalty circle green lighten-2"></i>
+          <span class="title">{{ name }}</span>
+          <p class="truncate">
+            {{ description }}
+          </p>
+          <span class="secondary-content"><i class="mdi-action-grade"></i> {{ rating }}</span>
+        </li>
+      {{/each}}
+    </ul>
+
+  </div>
+</template>

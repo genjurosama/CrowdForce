@@ -1,0 +1,27 @@
+.loading {
+  padding-top: 100px;
+}
+
+nav {
+  margin-bottom: 24px;
+}
+
+ul.side-nav li a {
+  line-height: 44px;
+  padding: 24px;
+  display: block;
+}
+
+ul.side-nav li {
+  float: none;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
