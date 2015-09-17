@@ -6,6 +6,10 @@ Router.route('/dashboard', {
   name: 'dashboard'
 });
 
+Router.route('/profile', {
+  name: 'profile'
+});
+
 Router.route('/items/new', {
   name: 'items.new'
 });

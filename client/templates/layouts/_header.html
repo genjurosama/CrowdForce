@@ -5,7 +5,7 @@
         <a class="brand-logo" href="{{pathFor 'home'}}">EventNow</a>
 
           <ul class="right">
-              <li><a class="dropdown-button" href="#!" data-activates="user-dropdown"><i class="mdi-navigation-more-vert"></i></a></li>
+              <li><a class="dropdown-button" href="#!" data-activates="user-dropdown"><img class="profileImg" src="{{currentUser.services.google.picture}}"/></a></li>
           </ul>
 
         <ul class="right hide-on-med-and-down">
@@ -15,7 +15,7 @@
 
         <ul id="user-dropdown" class="dropdown-content">
           {{#if currentUser}}
-
+              <li><a href="{{ pathFor 'profile' }}">Profile</a></li>
               <li><a href="#!"><i class="mdi-star_rate"></i>Level   <span class="new badge">{{currentUser.profile.score.level}}</span></a></li>
               <li><a href="#!">Score:<h6 class="red-text red-darken-3">{{currentUser.profile.score.score}} </h6></a></li>
             <li><a href="#" data-action="logout"><i class="mdi-action-lock"></i> Sign Out</a></li>

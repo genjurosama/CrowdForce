@@ -69,4 +69,12 @@
 	border-radius: 50%;
 }
 
+.profileImg{
+	width: 50px;
+	height: auto;
+	border-radius: 50%; /*don't forget prefixes*/
+	background-position: center center;
+	/* as mentioned by Vad: */
+	background-size: cover;
+}
 
